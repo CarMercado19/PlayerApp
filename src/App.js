@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.scss';
+
+import PlayCircleFilledRoundedIcon from '@material-ui/icons/PlayCircleFilledRounded';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="outerWrap">
+      <div className="App">
+        <div className="sideBar">
+          <div className="logo">
+            <PlayCircleFilledRoundedIcon />
+          </div>
+          <ul>
+            <li>Inicio</li>
+            <li>Buscar</li>
+            <li>Libreria</li>
+          </ul>
+        </div>
+      </div>
+      <div className="musicControls">
+        Previous/Play/Next
+      </div>
     </div>
   );
 }
