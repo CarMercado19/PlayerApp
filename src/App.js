@@ -1,22 +1,15 @@
 import React from 'react';
 import './App.scss';
 
-import PlayCircleFilledRoundedIcon from '@material-ui/icons/PlayCircleFilledRounded';
+import Slidebar from './components/Slidebar/Slidebar';
+import Main from './components/Main/Main';
 
-function App() {
+const App = () => {
   return (
     <div className="outerWrap">
       <div className="App">
-        <div className="sideBar">
-          <div className="logo">
-            <PlayCircleFilledRoundedIcon />
-          </div>
-          <ul>
-            <li>Inicio</li>
-            <li>Buscar</li>
-            <li>Libreria</li>
-          </ul>
-        </div>
+        <Slidebar />
+        <Main />
       </div>
       <div className="musicControls">
         Previous/Play/Next
