@@ -1,4 +1,7 @@
 import React from "react";
+import { ReactComponent as HomeIcon } from '../svg/home.svg';
+import { ReactComponent as SearchIcon } from '../svg/search.svg';
+import { ReactComponent as LibraryIcon } from '../svg/library_music.svg';
 
 const Slidebar = () => {
     return (
@@ -10,9 +13,18 @@ const Slidebar = () => {
                 <span>Music Player</span>
             </div>
             <ul>
-                <li className="active">Inicio</li>
-                <li>Buscar</li>
-                <li>Libreria</li>
+                <li className="active">
+                    <HomeIcon />
+                    Inicio
+                </li>
+                <li>
+                    <SearchIcon />
+                    Buscar
+                </li>
+                <li>
+                    <LibraryIcon />
+                    Libreria
+                </li>
             </ul>
             <div className="cookies">
                 <span>Cookies</span>
