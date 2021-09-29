@@ -28,11 +28,11 @@ const Categories = () => {
     return (
         <div>
             { dataCategories.map((category) => (
-            <div className="cardsWrap">
-                <h2>{ category.name }</h2>
-                <p className="subText">Playlists que se adaptan a tu humor.</p>
-                <Playlists categoryId={ category.id } />
-            </div>
+                <div className="cardsWrap">
+                    <h2>{ category.name }</h2>
+                    <p className="subText">{ category.tag }</p>
+                    <Playlists categoryId={ category.id } />
+                </div>
             ))}
         </div>
     );
